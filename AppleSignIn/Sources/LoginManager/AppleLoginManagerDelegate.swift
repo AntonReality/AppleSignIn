@@ -14,6 +14,4 @@ import AuthenticationServices
 public protocol AppleLoginManagerDelegate: class {
     func didCompleteAuthorizationWith(user: AppleUser)
     func didCompleteAuthorizationWith(error: Error)
-    
-    func authorizationCredentialsStateDidChange(credentials: AppleLoginManagerCredentialsState)
 }

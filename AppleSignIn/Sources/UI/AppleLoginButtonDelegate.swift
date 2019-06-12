@@ -12,6 +12,4 @@ import Foundation
 public protocol AppleLoginButtonDelegate: class {
     func didCompleteAuthorizationWith(user: AppleUser)
     func didCompleteAuthorizationWith(error: Error)
-    
-    func authorizationCredentialsStateDidChange(credentials: AppleLoginManagerCredentialsState)
 }

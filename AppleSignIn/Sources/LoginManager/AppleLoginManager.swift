@@ -9,6 +9,8 @@
 import Foundation
 import AuthenticationServices
 
+public typealias AppleLoginCredentialsStateDidChangeCompletion = (AppleLoginManagerCredentialsState?, Error?) -> Void
+
 /// Class that provies all the logic with login with Apple functionality.
 @available(iOS 13, *)
 public class AppleLoginManager: NSObject {
@@ -33,17 +35,17 @@ public class AppleLoginManager: NSObject {
     
     ///
     @available(iOS 13, *)
-    public func checkLoginCredentialsState(_ userId: String) {
+    public func checkLoginCredentialsState(_ userId: String, completion: @escaping AppleLoginCredentialsStateDidChangeCompletion) {
         let provider = ASAuthorizationAppleIDProvider()
-        provider.getCredentialState(forUserID: userId) { [weak self] in
+        provider.getCredentialState(forUserID: userId) {
             if let error = $1 {
-                self?.delegate?.didCompleteAuthorizationWith(error: error)
+                completion(nil, error)
                 return
             }
             
             guard let newState = AppleLoginManagerCredentialsState(rawValue: $0.rawValue) else { return }
             
-            self?.delegate?.authorizationCredentialsStateDidChange(credentials: newState)
+            completion(newState, nil)
         }
     }
 }
