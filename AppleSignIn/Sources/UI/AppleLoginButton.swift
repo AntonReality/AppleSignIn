@@ -41,6 +41,12 @@ public class AppleLoginButton: ASAuthorizationAppleIDButton {
         
         loginManager.performAppleLoginRequest(in: window)
     }
+    
+    //MARK: - Check current login state
+    @available(iOS 13, *)
+    public func checkLoginCredentialsState(_ userId: String) {
+        loginManager.checkLoginCredentialsState(userId)
+    }
 }
 
 //MARK: - AppleLoginManagerDelegate
@@ -51,5 +57,9 @@ extension AppleLoginButton: AppleLoginManagerDelegate {
     
     public func didCompleteAuthorizationWith(error: Error) {
         delegate?.didCompleteAuthorizationWith(error: error)
+    }
+    
+    public func authorizationCredentialsStateDidChange(credentials: AppleLoginManagerCredentialsState) {
+        delegate?.authorizationCredentialsStateDidChange(credentials: credentials)
     }
 }

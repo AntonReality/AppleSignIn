@@ -8,10 +8,16 @@
 
 import Foundation
 
-/// Apple login button style.
+/// Enum declares credentials state.
 @available(iOS 13.0, *)
-public enum AppleLoginButtonStyle : Int {
-    case white
-    case whiteOutline
-    case black
+public enum AppleLoginManagerCredentialsState : Int {
+
+    /// Access to Apple ID has been revoked. Unlink account.
+    case revoked
+    
+    /// Apple ID is valid.
+    case authorized
+    
+    /// Credentials not found. Typically you have to show login UI.
+    case notFound
 }

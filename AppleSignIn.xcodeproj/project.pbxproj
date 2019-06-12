@@ -16,6 +16,7 @@
 		E9D2FEB922B0031B00EDDECB /* AppleLoginManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D2FEB822B0031B00EDDECB /* AppleLoginManagerDelegate.swift */; };
 		E9D2FEBC22B0046200EDDECB /* AppleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D2FEBB22B0046200EDDECB /* AppleUser.swift */; };
 		E9D2FEBE22B0E89100EDDECB /* AppleLoginButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D2FEBD22B0E89100EDDECB /* AppleLoginButtonDelegate.swift */; };
+		E9D2FEC022B0EF0C00EDDECB /* AppleLoginManagerCredentialsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D2FEBF22B0EF0C00EDDECB /* AppleLoginManagerCredentialsState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E9D2FEB822B0031B00EDDECB /* AppleLoginManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginManagerDelegate.swift; sourceTree = "<group>"; };
 		E9D2FEBB22B0046200EDDECB /* AppleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleUser.swift; sourceTree = "<group>"; };
 		E9D2FEBD22B0E89100EDDECB /* AppleLoginButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginButtonDelegate.swift; sourceTree = "<group>"; };
+		E9D2FEBF22B0EF0C00EDDECB /* AppleLoginManagerCredentialsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginManagerCredentialsState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				E9D2FEAC22AFFA3200EDDECB /* AppleLoginManager.swift */,
 				E9D2FEB822B0031B00EDDECB /* AppleLoginManagerDelegate.swift */,
+				E9D2FEBF22B0EF0C00EDDECB /* AppleLoginManagerCredentialsState.swift */,
 			);
 			path = LoginManager;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				E9D2FEB422AFFEAC00EDDECB /* AppleLoginButtonStyle.swift in Sources */,
 				E9D2FEB922B0031B00EDDECB /* AppleLoginManagerDelegate.swift in Sources */,
 				E9D2FEAD22AFFA3200EDDECB /* AppleLoginManager.swift in Sources */,
+				E9D2FEC022B0EF0C00EDDECB /* AppleLoginManagerCredentialsState.swift in Sources */,
 				E9D2FEB722B002A600EDDECB /* UIWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

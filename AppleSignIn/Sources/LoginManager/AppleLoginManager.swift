@@ -30,12 +30,28 @@ public class AppleLoginManager: NSObject {
         
         controller.performRequests()
     }
+    
+    ///
+    @available(iOS 13, *)
+    public func checkLoginCredentialsState(_ userId: String) {
+        let provider = ASAuthorizationAppleIDProvider()
+        provider.getCredentialState(forUserID: userId) { [weak self] in
+            if let error = $1 {
+                self?.delegate?.didCompleteAuthorizationWith(error: error)
+                return
+            }
+            
+            guard let newState = AppleLoginManagerCredentialsState(rawValue: $0.rawValue) else { return }
+            
+            self?.delegate?.authorizationCredentialsStateDidChange(credentials: newState)
+        }
+    }
 }
 
 extension AppleLoginManager: ASAuthorizationControllerDelegate {
     public func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         if let credentials = authorization.credential as? ASAuthorizationAppleIDCredential {
-            
+            delegate?.didCompleteAuthorizationWith(user: AppleUser(credentials))
         }
     }
     

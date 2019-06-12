@@ -8,7 +8,10 @@
 
 import Foundation
 
+@available(iOS 13, *)
 public protocol AppleLoginButtonDelegate: class {
     func didCompleteAuthorizationWith(user: AppleUser)
     func didCompleteAuthorizationWith(error: Error)
+    
+    func authorizationCredentialsStateDidChange(credentials: AppleLoginManagerCredentialsState)
 }

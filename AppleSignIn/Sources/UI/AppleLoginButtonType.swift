@@ -11,10 +11,7 @@ import Foundation
 /// Login button type.
 @available(iOS 13.0, *)
 public enum AppleLoginButtonType : Int {
-    
     case `default`
-    
     case signUp
-    
     case `continue`
 }
