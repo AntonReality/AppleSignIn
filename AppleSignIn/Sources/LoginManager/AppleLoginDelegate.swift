@@ -11,7 +11,7 @@ import AuthenticationServices
 
 /// Delegate protocol used after authorization request.
 @available(iOS 13, *)
-public protocol AppleLoginManagerDelegate: class {
+public protocol AppleLoginDelegate: class {
     func didCompleteAuthorizationWith(user: AppleUser)
     func didCompleteAuthorizationWith(error: Error)
 }

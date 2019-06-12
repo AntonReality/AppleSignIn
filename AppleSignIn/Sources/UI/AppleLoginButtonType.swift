@@ -9,9 +9,17 @@
 import Foundation
 
 /// Login button type.
+///
+/// This declares the text on Apple login button.
 @available(iOS 13.0, *)
 public enum AppleLoginButtonType : Int {
-    case `default`
+    
+    /// Sign in with Apple.
+    case signIn
+    
+    /// Sign up with Apple.
     case signUp
+    
+    /// Continue with Apple.
     case `continue`
 }

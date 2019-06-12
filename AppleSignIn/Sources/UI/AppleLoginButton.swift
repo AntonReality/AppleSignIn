@@ -14,16 +14,16 @@ import AuthenticationServices
 @available(iOS 13, *)
 public class AppleLoginButton: ASAuthorizationAppleIDButton {
     
-    public var delegate: AppleLoginButtonDelegate?
+    public var delegate: AppleLoginDelegate?
     
     private lazy var loginManager = AppleLoginManager()
     
     /// Initialization.
     ///
     /// - Parameters:
-    ///     - authorizationButtonType: Button type. See `AppleLoginButtonType`. Default is `.signUp`.
+    ///     - authorizationButtonType: Button type. See `AppleLoginButtonType`. Default is `.signIn`.
     ///     - authorizationButtonStyle: Button style. See `AppleLoginButtonStyle`. Default is `.white`.
-    public init(authorizationButtonType type: AppleLoginButtonType = .signUp, authorizationButtonStyle style: AppleLoginButtonStyle = .white) {
+    public init(authorizationButtonType type: AppleLoginButtonType = .signIn, authorizationButtonStyle style: AppleLoginButtonStyle = .white) {
         super.init(authorizationButtonType: ButtonType(rawValue: type.rawValue) ?? .default, authorizationButtonStyle: ButtonStyle(rawValue: style.rawValue) ?? .white)
         
         addTarget(self, action: #selector(AppleLoginButton.performAppleLogin), for: .touchUpInside)
@@ -49,8 +49,8 @@ public class AppleLoginButton: ASAuthorizationAppleIDButton {
     }
 }
 
-//MARK: - AppleLoginManagerDelegate
-extension AppleLoginButton: AppleLoginManagerDelegate {
+//MARK: - AppleLoginDelegate
+extension AppleLoginButton: AppleLoginDelegate {
     public func didCompleteAuthorizationWith(user: AppleUser) {
         delegate?.didCompleteAuthorizationWith(user: user)
     }

@@ -15,7 +15,7 @@ public typealias AppleLoginCredentialsStateDidChangeCompletion = (AppleLoginMana
 @available(iOS 13, *)
 public class AppleLoginManager: NSObject {
     
-    public var delegate: AppleLoginManagerDelegate?
+    public var delegate: AppleLoginDelegate?
     
     /// Function used to perform login request.
     ///
