@@ -1,0 +1,11 @@
+framework module AppleSignIn {
+  umbrella header "AppleSignIn.h"
+
+  export *
+  module * { export * }
+}
+
+module AppleSignIn.Swift {
+    header "AppleSignIn-Swift.h"
+    requires objc
+}
