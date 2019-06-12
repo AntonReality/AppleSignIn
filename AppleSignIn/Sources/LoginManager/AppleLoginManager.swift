@@ -33,7 +33,7 @@ public class AppleLoginManager: NSObject {
         controller.performRequests()
     }
     
-    ///
+    /// Function used to check the credential state changes.
     @available(iOS 13, *)
     public func checkLoginCredentialsState(_ userId: String, completion: @escaping AppleLoginCredentialsStateDidChangeCompletion) {
         let provider = ASAuthorizationAppleIDProvider()
