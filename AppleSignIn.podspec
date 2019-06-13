@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  Library for fast an easy way to implement Apple Sign In.
+	AppleSignIn is the fast and easy way to implement Sign in with Apple introduced on Apple WWDC 2019.
                    DESC
 
   spec.homepage     = "https://github.com/AntonReality/AppleSignIn"

@@ -1,5 +1,5 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/AppleSignIn.svg)](https://cocoapods.org/pods/AppleSignIn)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-AAAAAA.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/AppleSignIn.svg?style=flat)](https://github.com/AntonReality/AppleSignIn)
 [![Facebook](https://img.shields.io/badge/facebook-@antonvofficial-blue.svg?style=flat)](https://facebook.com/antonvofficial)
 [![Open Source Helpers](https://www.codetriage.com/antonreality/applesignin/badges/users.svg)](https://www.codetriage.com/antonreality/applesignin)
@@ -32,7 +32,7 @@
 
 ## Installation
 
-**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** Currently **only manual** installation is available since `Cocoapods` and `Cartage` currently not available for `iOS 13`. This section is **only** for further installations when available.
+**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** Currently **only manual** or **Carthage** installation is available since `Cocoapods` and currently not available for `iOS 13`. This section is **only** for further installations when available.
 
 ### CocoaPods
 
@@ -47,7 +47,7 @@ pod 'AppleSignIn'
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate AppleSignIn into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "AntonReality/AppleSignIn"
+github "AntonReality/AppleSignIn" "0.0.1"
 ```
 
 ### Manually
