@@ -32,7 +32,7 @@
 
 ## Installation
 
-**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** Currently **only manual** or **Carthage** installation is available since `Cocoapods` and currently not available for `iOS 13`. This section is **only** for further installations when available.
+**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** Currently **only** **Carthage** or **manual** installations are available since `Cocoapods` not yet available for `iOS 13`. **Cocoapods** section is **only** for further installations when available.
 
 ### CocoaPods
 
