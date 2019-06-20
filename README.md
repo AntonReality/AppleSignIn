@@ -21,7 +21,7 @@
 - [ ] Initialization `Sign in with Apple` from storyboard or xib.
 - [x] Login with `default` button.
 - [x] Login with `custom` button.
-- [ ] Add `Cocoapods` support.
+- [x] Add `Cocoapods` support.
 - [x] Add `Cartage` support.
 
 ## Requirements
@@ -31,8 +31,6 @@
 - Swift 5+
 
 ## Installation
-
-**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** Currently **only** **Carthage** or **manual** installations are available since `Cocoapods` not yet available for `iOS 13`. **Cocoapods** section is **only** for further installations when available.
 
 ### CocoaPods
 
