@@ -22,7 +22,7 @@
 - [x] Login with `default` button.
 - [x] Login with `custom` button.
 - [ ] Add `Cocoapods` support.
-- [ ] Add `Cartage` support.
+- [x] Add `Cartage` support.
 
 ## Requirements
 
