@@ -21,6 +21,8 @@
 - [ ] Initialization `Sign in with Apple` from storyboard or xib.
 - [x] Login with `default` button.
 - [x] Login with `custom` button.
+- [ ] Add `MacOS` support.
+- [ ] Add `WatchOS` support.
 - [x] Add `Cocoapods` support.
 - [x] Add `Cartage` support.
 
