@@ -6,8 +6,6 @@
 
 **AppleSignIn** is the fast and easy way to implement ***Sign in with Apple*** introduced on Apple WWDC 2019.
 
-**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** **Sign in with Apple** is still in **BETA**. Everything in this library is tested and working but still can have unexpected results. Please, be careful.
-
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
